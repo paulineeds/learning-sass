@@ -1,11 +1,58 @@
-// silent comment
-
-/*not so silent.. whatever the differents is */
 
 
 $color: #e8d8dd;
+$font: 'Pacifico', cursive;
+$fontcolor: #a4aa6d;
+$kleureen: #dd66ff;
+$kleurtwee: #ff88dd;
+$bordercolor: #11aa22;
 
 
 body {
   background-color: $color;
+  font-family: $font;
+  font-size: (16 /20 ) *100%
 }
+
+%standaard-p {
+  font-weight: lighter;
+  width: 60%;
+  margin: 0 auto;
+}
+
+article {
+  @extend %standaard-p;
+  font-size: 120%;
+}
+
+section {
+  @extend %standaard-p;
+  color: $kleurtwee;
+}
+
+nav {
+
+  border: solid;
+  border-color: $bordercolor;
+  @extend %standaard-p;
+  text-align: center;
+
+    h3 {
+    color:$fontcolor;
+    font-size: 150%;
+  }
+
+    ul {
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    color:$kleureen;
+    font-size: 120%;
+    list-style: none;
+    :nth-child(odd) {
+      color: $kleurtwee;
+    }
+  }
+}
+
+@import 'partial';

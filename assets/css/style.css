@@ -1,1 +1,1 @@
-body{background-color:#e8d8dd}
+body{background-color:#e8d8dd;font-family:"Pacifico",cursive;font-size:80%}article,section,nav{font-weight:lighter;width:60%;margin:0 auto}article{font-size:120%}section{color:#f8d}nav{border:solid;border-color:#1a2;text-align:center}nav h3{color:#a4aa6d;font-size:150%}nav ul{padding:0px;display:flex;justify-content:space-around;color:#d6f;font-size:120%;list-style:none}nav ul :nth-child(odd){color:#f8d}nav{background-color:white}
